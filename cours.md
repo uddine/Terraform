@@ -112,16 +112,11 @@ A conditional expression uses the value of a bool expression to select one of tw
 une condition pour déterminer si une instance EC2 doit être provisionnée ou non.
 
 ## Expressions
-
 - String Templates
-
-
 - Splats
 
 ## Dynamic Blocks
-
 Un bloc dynamique agit un peu comme une expression for, mais produit des blocs imbriqués au lieu d'une valeur typée complexe.
-
 
 ## Versions Constraints MAJOR.MINOR.PATCH
 ------------------------------------------
@@ -132,10 +127,6 @@ Un bloc dynamique agit un peu comme une expression for, mais produit des blocs i
     - != excludes an exact version number for example != 1.0.0 is not accepted 
     - ~> allow only the rightmost version lst member to increment for example ~> 1.0.(0 accept the incremation)
 
-## Terraform Workflows
-
-- individual Terraform Workflow
-
 ## Backends
 
 - Standard Backend with Amazon S3
@@ -143,6 +134,14 @@ Un bloc dynamique agit un peu comme une expression for, mais produit des blocs i
 - terraform_remote_state local
 - terraform_remote_state remote
 - force-unlock
+
+## debugg terraform 
+
+Vous pouvez définir TF_LOGl'un des niveaux de journalisation (par ordre décroissant de verbosité) TRACE, DEBUG, INFOou pour WARNmodifier ERRORla verbosité des journaux.  
+
+Le paramètre TF_LOGsur JSONgénère des journaux au TRACEniveau ou supérieur et utilise un encodage JSON analysable comme formatage.  
+TF_LOG_CORE :   
+Pour conserver la sortie journalisée, vous pouvez définir TF_LOG_PATH
 
 ## Resources
 
@@ -153,15 +152,12 @@ How does Terraform Cloud backup states?
 Terraform Enterprise Air-gapped environment is designed to run in a network with no internet or outside connectivity
 In order to authenticate to Terraform Cloud what is recommended for local development?
 
-
-provisionner file : copy a file from the local machine to the remote machine 
-
 # Providers and modules 
-
 - Provider : plugins that allow yyou to intercative with cloud service providers .... 
 - Modules : is a groupe of configuration files that provide common configuration functionality 
 
-
 ## Exclusif : 
-
 On utilise un des deux dans un bloc exemple count et for-each son mutuellement exclusifs. 
+
+## identifiants et donnees sensibles : 
+

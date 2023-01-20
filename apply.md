@@ -20,3 +20,4 @@ Command : `$ terraform apply -replace=random_string.random`
 
 - -no-color- Désactive les séquences de formatage du terminal dans la sortie. Utilisez ceci si vous exécutez Terraform dans un contexte où sa sortie sera rendue par un système qui ne peut pas interpréter le formatage du terminal. 
 
+- -replace=ADDRESS- Demande à Terraform de prévoir de remplacer l'instance de ressource par l'adresse donnée. 

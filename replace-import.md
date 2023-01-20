@@ -7,7 +7,7 @@
 [x] step 1 : script pour creer une ressource --> init --> plan -->  Apply --> cree une ressource   
 [x] step 2 : terraform apply -replace=aws_instance.mahine --> supprime ancien et le remplace avec une nouvelle instance. 
 
-[x] step 3 : la ressource et supprimer sur la console aws 
+[x] step 3 : la ressource et supprimer sur la console aws  
 [x] step 4 : If we run 
 
 1 - terraform apply
